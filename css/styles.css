@@ -162,8 +162,9 @@ h1 {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
+  transform: translate(-50%, -50%) scale(0) skew(40deg, 40deg);
 }
-.modal {
+.backdrop {
   position: absolute;
   top: 0;
   left: 0;
@@ -172,7 +173,7 @@ h1 {
   min-height: 3000px;
   background-color: rgba(0, 0, 0, 0.2);
 }
-.window {
+.modal {
   height: 581px;
   width: 528px;
   border-radius: 4px;
@@ -183,11 +184,13 @@ h1 {
   left: 50%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  transform: translate(-50%, -50%) rotate(360deg);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: visibility, opacity, transform;
+  transition-duration: 2s;
+  transform: translate(-50%, -50%) scale(1) skew(0deg, 0deg);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
   opacity: 1;
   visibility: visible;
-  display: block;
 }
 .sign-up-form {
   margin: 12px 40px 0 40px;
