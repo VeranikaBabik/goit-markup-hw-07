@@ -87,7 +87,7 @@ nav {
   content: "";
   position: absolute;
   top: 76px;
-  background-image: url("/images/active.jpg");
+  background-image: url(../images/active.jpg);
   width: 53px;
   height: 4px;
   border-radius: 2px;
