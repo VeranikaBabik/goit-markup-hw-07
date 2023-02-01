@@ -66,7 +66,7 @@ p {
   fill: var(--color-mark);
   color: var(--color-mark);
 }
-.icon-1 {
+.strength__icon {
   display: inline-flex;
   background-color: rgba(245, 244, 250, 1);
   border-radius: 4px;
@@ -324,39 +324,39 @@ h1 {
   fill: rgba(0, 0, 0, 1);
   cursor: pointer;
 }
-.lorem-ipsum {
+.strength {
   display: flex;
   padding: 94px 0 0;
   justify-content: flex-start;
   margin: 0;
 }
-.lorem-ipsum:last-child {
+.strength:last-child {
   margin-right: 0;
 }
-.lorem-ipsum li {
+.strength__item {
   width: 270px;
   min-height: 75px;
   flex-basis: calc((100%-3 * 30) / 4);
 }
-.what-we-do-item {
+.direction {
   gap: 30px;
 }
-.what-we-do-text {
+.direction__title {
   padding: 94px 215px 0 215px;
 }
-.what-we-do-img {
+.direction__img {
   display: flex;
   padding: 0;
   margin: 0;
   gap: 30px;
 }
-.what-we-do-img li {
+.direction__img li {
   flex-basis: calc((100%-2 * 30px) / 3);
 }
-.background-overlay {
+.direction__overlay {
   position: relative;
 }
-.overlay {
+.direction__overlay-text {
   position: absolute;
   bottom: 0;
   width: 370px;
@@ -373,44 +373,27 @@ h1 {
   text-transform: uppercase;
   background-color: rgba(47, 48, 58, 0.8);
 }
-.team {
+.background-team {
   background-color: #f5f4fa;
-  margin: 94px 0 0;
-  display: flex;
 }
-.team-text {
+.team {
+  display: flex;
+  flex-direction: column;
+}
+.team__title {
   padding: 94px 480px 50px 480px;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
 }
-.persons {
+.team__persons {
   display: flex;
   gap: 30px;
   padding: 0;
   justify-content: space-between;
   margin-top: 0;
 }
-.name {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.17;
-  text-align: center;
-  padding-top: 30px;
-  margin: 0;
-  justify-content: center;
-  align-items: center;
-}
-.job {
-  font-size: 16px;
-  line-height: 1.17;
-  text-align: center;
-  margin: 0;
-  padding-top: 10px;
-  justify-content: center;
-  align-items: center;
-}
-.person {
+.team__person {
   background-color: var(--color-text-light);
   flex-basis: calc((100%-3 * 30px) / 4);
   margin-bottom: 94px;
@@ -420,7 +403,26 @@ h1 {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
-.links {
+.team__name {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.17;
+  text-align: center;
+  padding-top: 30px;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+.team__job {
+  font-size: 16px;
+  line-height: 1.17;
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.social-links {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -428,7 +430,7 @@ h1 {
   padding-bottom: 18px;
   padding-top: 16px;
 }
-.link {
+.social-links__item {
   display: flex;
   fill: rgba(175, 177, 184, 1);
   width: 44px;
@@ -441,8 +443,8 @@ h1 {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link:hover,
-.link:focus {
+.social-links__item:hover,
+.social-links__item:focus {
   cursor: pointer;
   fill: var(--color-text-light);
   background-color: var(--color-mark);
@@ -476,7 +478,7 @@ h1 {
   align-items: center;
   gap: 30px;
 }
-.client {
+.clients__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -490,11 +492,11 @@ h1 {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client:last-child {
+.clients__item:last-child {
   margin-right: 0;
 }
-.client:hover,
-.client:focus {
+.clients__item:hover,
+.clients__item:focus {
   cursor: pointer;
   fill: var(--color-mark);
   border-color: var(--color-mark);
@@ -520,7 +522,10 @@ address {
   margin-left: 70px;
   margin-top: 72px;
 }
-.card {
+.social-links__item--dark {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social__title {
   color: var(--color-text-light);
   font-weight: 700;
   font-size: 14px;
@@ -537,10 +542,10 @@ address {
 .footer__logo {
   margin-top: 60px;
 }
-.email-input {
+.newsletter {
   margin-left: 94px;
 }
-.subscribe {
+.newsletter__input {
   color: rgba(255, 255, 255, 0.6);
   background-color: rgba(47, 48, 58, 1);
   width: 358px;
@@ -550,12 +555,13 @@ address {
   min-height: 50px;
   padding-left: 16px;
 }
-.email-input-text {
+.newsletter__text {
   text-transform: uppercase;
   line-height: 1.17;
   font-weight: 700;
   font-size: 14px;
   color: var(--color-text-light);
+  margin: 72px 0 20px;
 }
 .button-footer {
   background-color: var(--color-mark);
@@ -573,7 +579,7 @@ address {
   justify-content: center;
   align-items: center;
 }
-.icon-send {
+.newsletter__button-send {
   fill: rgba(255, 255, 255, 1);
   margin-left: 24px;
 }
