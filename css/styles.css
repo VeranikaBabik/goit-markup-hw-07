@@ -49,7 +49,7 @@ p {
   align-items: center;
   height: 80px;
 }
-.logo {
+.main-header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,22 +92,22 @@ p {
   height: 4px;
   border-radius: 2px;
 }
-.logo__link {
+.logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
   text-decoration: none;
 }
-.logo__link--header {
+.logo--header {
   color: rgb(0, 0, 0);
 }
-.logo__link--footer {
+.logo--footer {
   color: var(--color-text-light);
 }
-.logo__text {
+.logo__link-text {
   color: var(--color-mark);
 }
-.main-header {
+.header {
   height: 80px;
   border-bottom: 1px solid rgba(236, 236, 236, 1);
   display: flex;
@@ -529,12 +529,12 @@ address {
   margin: 0;
   padding: 0;
 }
-.footer-item {
+.footer {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-.footer-logo {
+.footer__logo {
   margin-top: 60px;
 }
 .email-input {
