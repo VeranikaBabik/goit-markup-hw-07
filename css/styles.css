@@ -586,9 +586,10 @@ address {
   margin-left: 24px;
 }
 .main-portfolio {
-  margin: 94px 0;
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
-.button-portfolio {
+.portfolio-buttons__item {
   background-color: #f5f4fa;
   font-size: 16px;
   font-weight: 500;
@@ -597,22 +598,23 @@ address {
   border: none;
   padding: 6px 22px;
   border-radius: 4px;
-  transition-property: border-color, color;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-portfolio:hover,
-.button-portfolio:focus {
+.portfolio-buttons__item:hover,
+.portfolio-buttons__item:focus {
   background-color: var(--color-mark);
   color: var(--color-text-light);
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
-.buttons-portfolio {
+.portfolio-buttons {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin: 0 0 50px 0;
+  padding: 0;
   gap: 8px;
 }
 .projects {
@@ -637,13 +639,13 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-overlay {
+.project__img {
   position: relative;
   overflow: hidden;
   width: 370px;
   height: 294px;
 }
-.portfolio-overlay {
+.project__overlay {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -654,7 +656,7 @@ address {
   display: inline-block;
   background-color: rgba(33, 150, 243, 0.9);
 }
-.portfolio-overlay > p {
+.project__overlay > p {
   font-size: 18px;
   line-height: 1.56;
   color: var(--color-text-light);
@@ -663,17 +665,17 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project:hover .portfolio-overlay {
+.project:hover .project__overlay {
   transform: translatey(0);
 }
-.name-of-project {
+.project__name {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
   padding: 20px 24px 0 24px;
   margin: 0 auto;
 }
-.type-of-project {
+.project__type {
   font-size: 16px;
   line-height: 1.88;
   padding: 4px 24px 20px 24px;
