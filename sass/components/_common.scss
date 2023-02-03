@@ -56,8 +56,8 @@ p {
     flex-basis: calc((100% - 3 * 10px) / 4);
     @include transition(fill);
     @include transition(background-color);
-    &hover,
-    &focus {
+    &:hover,
+    &:focus {
       cursor: pointer;
       fill: $colorTextLight;
       background-color: $colorMark;
@@ -68,7 +68,7 @@ p {
   background-color: $colorSocialLinksBg;
 }
 .social-links--light {
-  background-color: $colorTextLight;
+  background-color: inherit;
   margin-left: 32px;
   margin-right: 32px;
 }
@@ -87,6 +87,6 @@ p {
   &:hover,
   &:focus {
     cursor: pointer;
-    background-color: var(--color-mark);
+    background-color: $colorMark;
   }
 }
