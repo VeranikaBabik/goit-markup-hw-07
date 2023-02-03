@@ -16,7 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <div class="modal is-hidden" data-modal>
@@ -70,8 +70,6 @@
                 type="checkbox"
                 id="agreement"
                 name="useragreement"
-                value="true"
-                required
               />
               <label class="agreement__label" for="agreement"
                 >Oświadczam iż akceptuję
@@ -82,9 +80,7 @@
               </label>
             </div>
             <div>
-              <button class="button agreement__button" type="submit">
-                Wyślij
-              </button>
+              <button class="agreement__button" type="submit">Wyślij</button>
             </div>
           </form>
         </div>
@@ -111,7 +107,7 @@
                     >Portfolio</a
                   >
                 </li>
-                <li class="navigation__link">Kontakt</li>
+                <li><a class="navigation__link" href="">Kontakt</a></li>
               </ul>
             </nav>
           </div>
@@ -143,7 +139,7 @@
             EFEKTYWNE ROZWIĄZANIA<br />
             DLA WASZEGO BIZNESU
           </h1>
-          <button data-modal-open class="button button__motto" type="button">
+          <button data-modal-open class="motto__button" type="button">
             Zamów usługę
           </button>
         </div>
@@ -240,7 +236,7 @@
                 />
                 <h3 class="team__name">John Doe</h3>
                 <p class="team__job">Product Designer</p>
-                <div class="social-links">
+                <div class="social-links social-links--light">
                   <div class="social-links__item">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram"></use>
@@ -275,7 +271,7 @@
 
                 <h3 class="team__name">John Doe</h3>
                 <p class="team__job">Frontend Developer</p>
-                <div class="social-links">
+                <div class="social-links social-links--light">
                   <div class="social-links__item">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram"></use>
@@ -309,7 +305,7 @@
                 />
                 <h3 class="team__name">John Doe</h3>
                 <p class="team__job">Marketing</p>
-                <div class="social-links">
+                <div class="social-links social-links--light">
                   <div class="social-links__item">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram"></use>
@@ -343,7 +339,7 @@
                 />
                 <h3 class="team__name">John Doe</h3>
                 <p class="team__job">UI Designer</p>
-                <div class="social-links">
+                <div class="social-links social-links--light">
                   <div class="social-links__item">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram"></use>
@@ -453,7 +449,7 @@
                 name="signupemail"
                 placeholder="E-mail"
               />
-              <button class="button button-footer" type="submit">
+              <button class="button-footer" type="submit">
                 Zapisz się
                 <svg class="newsletter__button-send" width="24" height="24">
                   <use href="./images/icons.svg#icon-send"></use>
